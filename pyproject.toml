@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "taskmaster"
+version = "0.1.0"
+description = "TaskMaster - simple task manager API"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.0"
+uvicorn = {extras=["standard"], version="^0.22.0"}
+sqlalchemy = "^2.0.0"
+alembic = "^1.11.0"
+pydantic = "^1.10.0"
+passlib = "^1.7.4"
+python-jose = "^3.3.0"
+python-multipart = "^0.0.6"
+databases = "^0.6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.3.0"
+httpx = "^0.24.0"
+pytest-asyncio = "^0.21.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
